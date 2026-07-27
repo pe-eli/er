@@ -6,6 +6,7 @@ import "./globals.css";
 
 const manrope = Manrope({ variable: "--font-manrope", subsets: ["latin"], display: "swap" });
 const META_PIXEL_ID = "27561649656861064";
+const UTMIFY_PIXEL_ID = "6a67b55a6086bf90d1cd4788";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
@@ -39,7 +40,9 @@ export async function generateMetadata(): Promise<Metadata> {
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#1F4B3D" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR"><body className={manrope.variable}>{children}<Script id="meta-pixel" strategy="afterInteractive">{`
+  return <html lang="pt-BR"><body className={manrope.variable}>{children}<Script id="utmify-pixel-config" strategy="beforeInteractive">{`
+    window.pixelId = "${UTMIFY_PIXEL_ID}";
+  `}</Script><Script id="utmify-pixel" src="https://cdn.utmify.com.br/scripts/pixel/pixel.js" strategy="afterInteractive" /><Script id="utmify-utms" src="https://cdn.utmify.com.br/scripts/utms/latest.js" strategy="afterInteractive" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" /><Script id="meta-pixel" strategy="afterInteractive">{`
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
