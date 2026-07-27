@@ -5,7 +5,7 @@ const productSchema = {
   "@type": "Product",
   name: "Emprego Rápido",
   description: "Guia digital de recolocação profissional, currículo, LinkedIn, plataformas de vagas e entrevistas.",
-  image: "/assets/ebook-cover.webp",
+  image: "/capa.png",
   brand: { "@type": "Brand", name: "Carolina Moura" },
   offers: {
     "@type": "Offer",

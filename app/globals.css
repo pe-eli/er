@@ -142,6 +142,7 @@ h2 { margin: 0; font-size: clamp(1.75rem, 7.5vw, 2.35rem); line-height: 1.12; le
 .material-section { overflow: hidden; background: white; }
 .material-showcase { position: relative; height: 520px; margin-top: 34px; }
 .material-page { position: absolute; overflow: hidden; width: 160px; aspect-ratio: 982 / 1389; margin: 0; border: 1px solid rgba(31, 75, 61, .1); border-radius: 5px; background: white; box-shadow: 0 16px 36px rgba(31, 53, 44, .15); }
+.material-page--cover { aspect-ratio: 628 / 842; }
 .material-page img, .material-device img { object-fit: cover; object-position: top; }
 .material-page--cover { z-index: 4; left: 50%; top: 78px; width: 190px; transform: translateX(-50%) rotate(-2deg); }
 .material-page--summary { z-index: 2; left: 0; top: 32px; transform: rotate(-8deg); }
