@@ -53,7 +53,6 @@ function Section({ children, className = "", id }: { children: React.ReactNode; 
 function CheckoutButton({ children, className = "", location }: { children: React.ReactNode; className?: string; location: string }) {
   const [href, setHref] = useState("#oferta");
   useEffect(() => {
-    if (CHECKOUT_URL === "INSERIR_URL_DO_CHECKOUT") return;
     const checkout = new URL(CHECKOUT_URL, window.location.origin);
     const current = new URLSearchParams(window.location.search);
     TRACKED_QUERY_PARAMS.forEach((param) => { const value = current.get(param); if (value) checkout.searchParams.set(param, value); });
@@ -127,7 +126,7 @@ export function SalesPage() {
   const year = useMemo(() => new Date().getFullYear(), []);
   useEffect(() => {
     const payload = { event: "page_view", page_title: "Emprego Rápido" };
-    window.dataLayer?.push(payload); window.gtag?.("event", "page_view", payload); window.fbq?.("track", "PageView");
+    window.dataLayer?.push(payload); window.gtag?.("event", "page_view", payload);
   }, []);
 
   return <>

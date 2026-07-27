@@ -12,7 +12,7 @@ const productSchema = {
     priceCurrency: "BRL",
     price: "19.90",
     availability: "https://schema.org/InStock",
-    url: "INSERIR_URL_DO_CHECKOUT",
+    url: "https://pay.cakto.com.br/xzi9krb_1005370",
   },
 };
 

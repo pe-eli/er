@@ -53,11 +53,13 @@ h2 { margin: 0; font-size: clamp(1.75rem, 7.5vw, 2.35rem); line-height: 1.12; le
 .hero h1 span { position: relative; z-index: 1; display: inline-block; color: var(--forest); }
 .hero h1 span::after { content: ""; position: absolute; z-index: -1; left: -4px; right: -4px; bottom: 2px; height: .32em; border-radius: 6px; background: rgba(207, 149, 114, .35); transform: rotate(-1deg); }
 .hero-lead { max-width: 580px; margin: 16px auto 0; color: #4e5650; font-size: .94rem; line-height: 1.52; }
-.hero-mobile-product { height: 245px; margin: 8px 0 -2px; }
+.hero-mobile-product { height: 230px; margin: 24px 0 22px; }
 .hero-desktop-product { display: none; }
 .book-stage { position: relative; width: 100%; height: 100%; min-height: 220px; }
-.book { position: absolute; z-index: 2; left: 50%; top: 50%; width: min(49vw, 188px); aspect-ratio: 982 / 1389; transform: translate(-58%, -50%) perspective(900px) rotateY(-10deg) rotateZ(-1.5deg); filter: drop-shadow(0 22px 26px rgba(35, 39, 35, .24)); }
+.book { position: absolute; z-index: 2; left: 50%; top: 50%; width: min(49vw, 188px); aspect-ratio: 628 / 842; transform: translate(-58%, -50%) perspective(900px) rotateY(-10deg) rotateZ(-1.5deg); filter: drop-shadow(0 22px 26px rgba(35, 39, 35, .24)); }
 .book img { width: 100%; height: 100%; border-radius: 3px 7px 7px 3px; object-fit: cover; }
+.hero-mobile-product .book { width: min(42vw, 160px); }
+.hero-mobile-product .device { width: min(22vw, 84px); }
 .book-spine { position: absolute; z-index: 3; left: -6px; top: 4px; bottom: 4px; width: 8px; border-radius: 4px 0 0 4px; background: #5d675e; transform: skewY(-8deg); box-shadow: inset -2px 0 rgba(255, 255, 255, .18); }
 .book-shadow { position: absolute; z-index: 0; left: 28%; right: 23%; bottom: 7%; height: 22px; border-radius: 50%; background: rgba(31, 39, 34, .2); filter: blur(14px); }
 .device { position: absolute; z-index: 1; left: 54%; top: 50%; width: min(25vw, 96px); aspect-ratio: .52; overflow: hidden; border: 5px solid #242823; border-radius: 16px; background: white; transform: translate(8%, -35%) rotate(6deg); box-shadow: 0 18px 30px rgba(31, 39, 34, .18); }
