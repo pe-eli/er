@@ -24,7 +24,6 @@ const faqSchema = {
     ["Recebo o material na hora?", "Sim. O acesso é liberado após a confirmação do pagamento."],
     ["Serve para quem está procurando o primeiro emprego?", "Sim. O conteúdo ajuda a organizar competências, cursos, experiências acadêmicas e potencial profissional."],
     ["Serve para quem já tem experiência?", "Sim. O material mostra como transformar tarefas em resultados e melhorar o posicionamento profissional."],
-    ["O ebook garante que vou conseguir um emprego?", "Não existe garantia de contratação. O material foi criado para ajudar você a melhorar sua estratégia e aumentar suas chances nos processos seletivos."],
     ["Como funciona a garantia?", "Você terá sete dias para solicitar o reembolso, conforme as condições informadas no momento da compra."],
   ].map(([name, text]) => ({
     "@type": "Question",
