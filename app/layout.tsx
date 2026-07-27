@@ -5,7 +5,7 @@ import Script from "next/script";
 import "./globals.css";
 
 const manrope = Manrope({ variable: "--font-manrope", subsets: ["latin"], display: "swap" });
-const META_PIXEL_ID = "1515713973902197";
+const META_PIXEL_ID = "27561649656861064";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
